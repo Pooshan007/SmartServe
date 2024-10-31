@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">  
+    <title>Recipe Details</title>
+   
+  
+</head>
+
+<body>
+    
+    <div class="background">
+        <div class="container">
+            <h1>Recipe Details</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search food items..." />
+            </div>
+            <div id="startersText">Starters</div>
+           <div>
+            <div id="nonVegStartersText">Non-Veg Starters</div>
+            <div>
+                <div class="food-list">
+            <div class="food-item" data-item="chicken 65">
+                <img src="https://paattiskitchen.com/wp-content/uploads/2023/05/kmc_20230501_131310.jpg" alt="chicken 65">
+                <h3>chicken 65</h3>
+                <p>delicious non-veg starter</p>
+                <div class="plus-button" data-item="chicken 65">+</div>
+            </div>
+                  <div class="food-item" data-item="tandoori chicken"> 
+                <img src="https://www.easycookingwithmolly.com/wp-content/uploads/2023/11/air-fryer-whole-tandoori-chicken-3.jpg" alt="Tandoori Chicken"> 
+                <h3>Tandoori Chicken</h3> 
+                <p>Deliciously marinated chicken grilled to perfection.</p> 
+                <div class="plus-button" data-item="tandoori chicken">+</div> 
+
+            </div> 
+            <div class="food-item" data-item="chicken manchurian">
+                <img src="https://tastypics.s3.us-west-1.amazonaws.com/a30f207304f8461eb193319491847e7e.jpg" alt="Chicken Manchurian">
+                <h3>Chicken Manchurian</h3>
+                <p>Spicy and tangy chicken dish tossed in a Manchurian sauce.</p>
+                <div class="plus-button" data-item="chicken manchurian">+</div>
+            </div>
+            <div class="food-item" data-item="chicken drumstick">
+                <img src="https://simplefreshnyum.com/wp-content/uploads/2021/02/Air-fryer-chicken-drumsticks-on-a-plate.jpg" alt="Chicken Drumstick">
+                <h3>Chicken Drumstick</h3>
+                <p>Flavorful marinated chicken drumsticks fried to perfection.</p>
+                <div class="plus-button" data-item="chicken drumstick">+</div>
+            </div>
+            </div>
+
+            </div>
+           </div> 
+            <div id="vegStartersText">Veg Starters</div>
+            <div class="food-list">
+                <div class="food-item" data-item="paneer 65">
+                    <img src="https://static.toiimg.com/thumb/75490988.cms?imgsize=1561658&width=800&height=800" alt="Paneer 65">
+                    <h3>Paneer 65</h3>
+                    <p>Spicy fried paneer with aromatic spices.</p>
+                    <div class="plus-button" data-item="paneer 65">+</div>
+                </div>
+                
+                <div class="food-item" data-item="baby corn 65">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/gobi-manchurian-500x375.webp" alt="Baby Corn 65">
+                    <h3>Baby Corn 65</h3>
+                    <p>Crispy fried baby corn with a spicy touch.</p>
+                    <div class="plus-button" data-item="baby corn 65">+</div>
+                </div>
+                
+                <div class="food-item" data-item="chilli gobi">
+                    <img src="https://images.herzindagi.info/image/2019/Mar/chilli-gobhi-recipe-main.jpg" alt="Chilli Gobi">
+                    <h3>Chilli Gobi</h3>
+                    <p>Fried cauliflower tossed in a spicy chilli sauce.</p>
+                    <div class="plus-button" data-item="chilli gobi">+</div>
+                </div>
+                
+                <div class="food-item" data-item="chilli mushroom">
+                    <img src="https://myfoodstory.com/wp-content/uploads/2024/04/Mushroom-Chilli-5.jpg" alt="Chilli Mushroom">
+                    <h3>Chilli Mushroom</h3>
+                    <p>Fried mushrooms tossed in a flavorful chilli sauce.</p>
+                    <div class="plus-button" data-item="chilli mushroom">+</div>
+                </div>
+            </div>
+            
+            
+               
+            <div id="nonVegBiryaniText">Non-Veg Biryanis</div>
+            <div class="food-list">
+                <div class="food-item" data-item="chicken biryani">
+                    <img src="https://assets.cntraveller.in/photos/63997ddc9ee4918a0f9a6861/16:9/w_960,c_limit/biryani%20in%20hyderabad.jpg" alt="Chicken Biryani">
+                    <h3>Chicken Biryani</h3>
+                    <p>Delicious and spicy rice dish.</p>
+                    <div class="plus-button" data-item="chicken biryani">+</div>
+                </div>
+                
+                <div class="food-item" data-item="mutton biryani">
+                    <img src="https://i.ytimg.com/vi/s4YsKuoYTe8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA8DNcG2opFjrju1AlULhM7SOQLfA" alt="Mutton Biryani">
+                    <h3>Mutton Biryani</h3>
+                    <p>Rich and aromatic rice dish cooked with tender mutton pieces.</p>
+                    <div class="plus-button" data-item="mutton biryani">+</div>
+                </div>
+                
+                <div class="food-item" data-item="apollo fish biryani">
+                    <img src="https://fireflygrillandbar.com/wp-content/uploads/2024/09/8-2.jpg" alt="Apollo Fish Biryani">
+                    <h3>Apollo Fish Biryani</h3>
+                    <p>Delicious biryani with flavorful marinated Apollo fish pieces.</p>
+                    <div class="plus-button" data-item="apollo fish biryani">+</div>
+                </div>
+                
+                <div class="food-item" data-item="egg biryani">
+                    <img src="https://i1.wp.com/www.bharatzkitchen.com/wp-content/uploads/2020/12/EGG-BHAJI-BIRYANI-.jpg?fit=1200%2C675&ssl=1" alt="Egg Biryani">
+                    <h3>Egg Biryani</h3>
+                    <p>Aromatic rice dish with boiled eggs and a blend of spices.</p>
+                    <div class="plus-button" data-item="egg biryani">+</div>
+                </div>
+            </div>
+            
+           
+            <div id="vegBiryaniText">Veg Biryanis</div>
+            <div class="food-list">
+                <div class="food-item" data-item="kaju paneer biryani">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/8256725/2hmTz5Pr.webp" alt="Kaju Paneer Biryani">
+                    <h3>Kaju Paneer Biryani</h3>
+                    <p>Aromatic biryani with rich paneer and crunchy cashews.</p>
+                    <div class="plus-button" data-item="kaju paneer biryani">+</div>
+                </div>
+                
+                <div class="food-item" data-item="paneer biryani">
+                    <img src="https://spicecravings.com/wp-content/uploads/2022/06/Achari-Paneer-Biryani-Featured.jpg" alt="Paneer Biryani">
+                    <h3>Paneer Biryani</h3>
+                    <p>Flavorful biryani made with marinated paneer and fragrant spices.</p>
+                    <div class="plus-button" data-item="paneer biryani">+</div>
+                </div>
+                
+                <div class="food-item" data-item="mushroom biryani">
+                    <img src="https://mushroominfo.co.za/wp-content/uploads/2020/10/double-mushroom-biryani-1-scaled.jpg" alt="Mushroom Biryani">
+                    <h3>Mushroom Biryani</h3>
+                    <p>Delicious biryani featuring sautéed mushrooms and spices.</p>
+                    <div class="plus-button" data-item="mushroom biryani">+</div>
+                </div>
+                
+                <div class="food-item" data-item="spring onion biryani">
+                    <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2018/01/IMG_8229.jpg" alt="Spring Onion Biryani">
+                    <h3>Spring Onion Biryani</h3>
+                    <p>A refreshing biryani with the crisp taste of spring onions.</p>
+                    <div class="plus-button" data-item="spring onion biryani">+</div>
+                </div>
+            </div>
+            
+            <div id="riceItemsText">Rice Items</div>
+            <div class="food-list">
+                <div class="food-item" data-item="jeera rice">
+                    <img src="https://slurrp.club/wp-content/uploads/2021/04/DSC_0429-2-750x500.jpg" alt="Jeera Rice">
+                    <h3>Jeera Rice</h3>
+                    <p>Flavored rice cooked with cumin seeds.</p>
+                    <div class="plus-button" data-item="jeera rice">+</div>
+                </div>
+                
+                <div class="food-item" data-item="plain rice">
+                    <img src="https://www.msrmarket.in/cdn/shop/products/images_39be18bf-cc8c-406c-96df-64148584745d.jpg?v=1649491820" alt="Plain Rice">
+                    <h3>Plain Rice</h3>
+                    <p>Simple white rice.</p>
+                    <div class="plus-button" data-item="plain rice">+</div>
+                </div>
+                
+                <div class="food-item" data-item="bagara rice">
+                    <img src="https://i.ytimg.com/vi/mnLV30v7uOc/maxresdefault.jpg" alt="Bagara Rice">
+                    <h3>Bagara Rice</h3>
+                    <p>Rice with mild spices.</p>
+                    <div class="plus-button" data-item="bagara rice">+</div>
+                </div>
+                
+                <div class="food-item" data-item="pulihora">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwjSg4L7Q5rpxR2VdOIK7rZP4i1A2cD8aPOAfQNFtWB09Nc4Yy22Y2UwxHPEYzgYmeWzQUpzPPuOyshZDSowxGXOC6JzimLbVBVrOxJLvK1eZCEoGlKHMTwAN1AunO0C3yd1b21Pgk-u5p/s1600/20160909_144827.jpg" alt="Pulihora">
+                    <h3>Pulihora</h3>
+                    <p>Spicy and tangy rice dish flavored with tamarind and spices.</p>
+                    <div class="plus-button" data-item="pulihora">+</div>
+                </div>
+                
+                <div class="food-item" data-item="curd rice">
+                    <img src="https://www.chefkunalkapur.com/wp-content/uploads/2023/05/DSC09411-1300x731.jpg?v=1684031938" alt="Curd Rice">
+                    <h3>Curd Rice</h3>
+                    <p>Simple and cooling rice dish made with yogurt.</p>
+                    <div class="plus-button" data-item="curd rice">+</div>
+                </div>
+                
+                <div class="food-item" data-item="tomato rice">
+                    <img src="https://www.savoryexperiments.com/wp-content/uploads/2024/01/Tomato-Rice-5.jpg" alt="Tomato Rice">
+                    <h3>Tomato Rice</h3>
+                    <p>Fragrant rice cooked with tomatoes and spices.</p>
+                    <div class="plus-button" data-item="tomato rice">+</div>
+                </div>
+                
+                <div class="food-item" data-item="fried rice">
+                    <img src="https://www.veganricha.com/wp-content/uploads/2023/09/Schezwan-Rice-2756.jpg" alt="Fried Rice">
+                    <h3>Fried Rice</h3>
+                    <p>Delicious stir-fried rice with vegetables and spices.</p>
+                    <div class="plus-button" data-item="fried rice">+</div>
+                </div>
+            </div>
+            
+            <div id="vegCurriesText">Veg Curries</div>
+            <div class="food-list">
+                <div class="food-item" data-item="sambar">
+                    <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/sambar-1.jpg" alt="Sambar">
+                    <h3>Sambar</h3>
+                    <p>Juicy and spicy curry.</p>
+                    <div class="plus-button" data-item="sambar">+</div>
+                </div>
+            
+                <div class="food-item" data-item="dal">
+                    <img src="https://i.ytimg.com/vi/fblpHcb8mPQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAZcHQE2iV-s7sIvqiHKDNgnZA-SQ" alt="Dal">
+                    <h3>Dal</h3>
+                    <p>Delicious curry made of toor dal.</p>
+                    <div class="plus-button" data-item="dal">+</div>
+                </div> 
+            
+                <div class="food-item" data-item="paneer curry">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ__FmHdUF5dsIIpfPClhnHs9lidRdHH4wasQ&s" alt="Paneer Curry">
+                    <h3>Paneer Curry</h3>
+                    <p>Creamy curry made with paneer and aromatic spices.</p>
+                    <div class="plus-button" data-item="paneer curry">+</div>
+                </div>
+            
+                <div class="food-item" data-item="rasam">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/11/rasam-recipe.jpg" alt="Rasam"> 
+                    <h3>Rasam</h3>
+                    <p>Famous South Indian curry.</p>
+                    <div class="plus-button" data-item="rasam">+</div>
+                </div>
+                                      
+                <div class="food-item" data-item="mushroom masala">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV9dLSXICrn7RB897WzJ_IbHlxJaMsiO8ss_ad3sQ5wduzQsCHZg_dXyc4_J2pYyEdhjlzBSpV0JAfu2WwJZ_rs9ADuh_bTznXxld1bAMI3OLGVDouaQcBYauLNK4Ym1_Y5_bf12woVc4/s1600/Musgroom+gravy+recipe.JPG" alt="Mushroom Masala">
+                    <h3>Mushroom Masala</h3>
+                    <p>Spicy and flavorful mushroom curry.</p>
+                    <div class="plus-button" data-item="mushroom masala">+</div>
+                </div>
+            
+                <div class="food-item" data-item="kaju curry">
+                    <img src="https://www.cookwithmanali.com/wp-content/uploads/2021/07/Kaju-Masala-Kaju-Curry-768x1164.jpg" alt="Kaju Curry">
+                    <h3>Kaju Curry</h3>
+                    <p>Delicious curry made with cashews.</p>
+                    <div class="plus-button" data-item="kaju curry">+</div>
+                </div>
+            </div>
+            
+            <div id="nonVegCurriesText">Non-Veg Curries</div>
+            <div class="food-list">
+                <div class="food-item" data-item="chicken curry">
+                    <img src="https://myfoodstory.com/wp-content/uploads/2020/10/Dhaba-Style-Chicken-Curry-2.jpg" alt="Chicken Curry">
+                    <h3>Chicken Curry</h3>
+                    <p>Delicious chicken cooked in a rich and spicy gravy.</p>
+                    <div class="plus-button" data-item="chicken curry">+</div>
+                </div>
+            
+                <div class="food-item" data-item="mutton curry">
+                    <img src="https://c.ndtvimg.com/2023-01/oqp7e4cg_mutton-curry_625x300_21_January_23.jpg" alt="Mutton Curry"> 
+                    <h3>Mutton Curry</h3>
+                    <p>Delicious goat curry with mild spices.</p>
+                    <div class="plus-button" data-item="mutton curry">+</div>
+                </div> 
+            
+                <div class="food-item" data-item="egg curry"> 
+                    <img src="https://images.services.kitchenstories.io/qxU0BGK_o190HTKyrVkTEFf-cc0=/3840x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2899-photo-final-3x4.jpg" alt="Egg Curry"> 
+                    <h3>Egg Curry</h3> 
+                    <p>Spicy and flavorful curry made with eggs.</p> 
+                    <div class="plus-button" data-item="egg curry">+</div> 
+                </div>  
+            
+                <div class="food-item" data-item="mutton kheema"> 
+                    <img src="https://boyeatsworld.in/wp-content/uploads/2021/06/DSC03819-1536x1019.jpg" alt="Mutton Kheema"> 
+                    <h3>Mutton Kheema</h3> 
+                    <p>Spicy minced mutton cooked with spices.</p> 
+                    <div class="plus-button" data-item="mutton kheema">+</div> 
+                </div> 
+            
+                <div class="food-item" data-item="egg fry"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV504OGrPwvIAuEGsEBgP6U7DYusRapJ7xCQ&s" alt="Egg Fry"> 
+                    <h3>Egg Fry</h3> 
+                    <p>Simple and delicious fried eggs with spices.</p> 
+                    <div class="plus-button" data-item="egg fry">+</div> 
+                </div> 
+            
+                <div class="food-item" data-item="chicken curry">
+                    <img src="https://spiceeats.com/wp-content/uploads/2020/02/Mild-Chicken-Curry.jpg" alt="Chicken Curry"> 
+                    <h3>Chicken Curry</h3>
+                    <p>Delicious non-veg curry with mild spices.</p>
+                    <div class="plus-button" data-item="chicken curry">+</div>
+                </div>
+            </div>
+            
+            <div id="rotisText">Rotis</div>
+            
+            <div class="food-list">
+                <div class="food-item" data-item="tandoori roti">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbbh04lsttJ0bVAl538JqmrSiVyGc5_XPYg&s" alt="Tandoori Roti">
+                    <h3>Tandoori Roti</h3>
+                    <p>Traditional Indian flatbread baked in a tandoor.</p>
+                    <div class="plus-button" data-item="tandoori roti">+</div>
+                </div>
+            
+                <div class="food-item" data-item="rumali roti">
+                    <img src="https://theolddelhi.com/wp-content/uploads/2021/08/download-9.jpg" alt="Rumali Roti">
+                    <h3>Rumali Roti</h3>
+                    <p>Soft Indian bread that is thin and large.</p>
+                    <div class="plus-button" data-item="rumali roti">+</div>
+                </div>
+            </div>
+            
+            <div id="dessertsText">Desserts</div>
+            <div class="food-list">
+         
+                <div class="food-item" data-item="apricot delight">
+                    <img src="https://jantaserishta.com/h-upload/2024/06/17/3797344-untitled-11-copy.webp" alt="Apricot Delight">
+                    <h3>Apricot Delight</h3>
+                    <p>A sweet dessert made with apricots and nuts.</p>
+                    <div class="plus-button" data-item="apricot delight">+</div>
+                </div>
+              
+           
+            <div class="food-item" data-item="double ka meetha">
+                <img src="https://yummyindiankitchen.com/wp-content/uploads/2020/11/hyderabadi-double-ka-meetha-how-to-make-double-ka-meetha-1024x576.jpg" alt="Double Ka Meetha">
+                <h3>Double Ka Meetha</h3>
+                <p>Rich and delicious Hyderabadi bread pudding dessert.</p>
+                <div class="plus-button" data-item="double ka meetha">+</div>
+            </div>
+         
+            <div class="food-item" data-item="gulab jamun"> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHgh4DGpTdfQ6JMMJM6SrDC2UpFc5jxerTjQ&s" alt="Gulab Jamun"> 
+                <h3>Gulab Jamun</h3> 
+                <p>Soft and sweet dessert balls soaked in syrup.</p> 
+                <div class="plus-button" data-item="gulab jamun">+</div> 
+            </div>
+         
+            <div class="food-item" data-item="khaddu ka kheer">
+                <img src="https://charminarhotel.com/wp-content/uploads/2024/07/Untitled-design-44.jpg" alt="khaddu ka kheer"> 
+                <h3>khaddu ka kheer</h3>
+                <p>famous north indian curry</p>
+                <div class="plus-button" data-item="khaddu ka kheer">+</div>
+            </div>
+           
+          
+            <div class="cart">
+                <h2>Cart</h2>
+                <ul id="cartItems" class="cart-items">
+                    
+                </ul>
+
+                <label for="persons" style="color: #ddd;">Enter number of persons:</label>
+                        <input type="number" id="persons" min="1" required>
+
+                <button id="calculateButton">Calculate Ingredients</button>
+            </div>
+            <div class="notification" id="notification"></div>
+            
+
+            <div id="output">
+            <h2>Ingredients Needed</h2>
+                <div class="ingredients-overlay">
+                    <ul id="ingredientsList"></ul>
+                </div>
+            </div> 
+            
+        </div>
+            </div>
+        </div>
+    </div>
+    <button id="scrollToTop" class="scroll-button">↑</button>
+    <button id="scrollToBottom" class="scroll-button">↓</button>
+</body>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const foodItems = document.querySelectorAll('.food-item');
+
+    // Array of headings to hide/show
+    const headings = [
+        'startersText', 'nonVegStartersText', 'vegStartersText', 
+        'nonVegBiryaniText', 'vegBiryaniText', 'riceItemsText', 
+        'vegCurriesText', 'nonVegCurriesText', 'rotisText', 'dessertsText'
+    ];
+
+    headings.forEach(headingId => {
+        const heading = document.getElementById(headingId);
+        heading.style.display = searchTerm ? 'none' : 'block';
+    });
+
+    foodItems.forEach(item => {
+        const itemName = item.querySelector('h3').textContent.toLowerCase();
+        item.style.display = itemName.includes(searchTerm) ? 'block' : 'none';
+    });
+});
+
+let cart = {};
+
+// Show notification function
+function showNotification(message) {
+    const notification = document.getElementById('notification');
+    notification.textContent = message;
+    notification.style.display = 'block';
+    setTimeout(() => {
+        notification.style.display = 'none';
+    }, 3000);
+}
+
+// Modify add-to-cart functionality with improved notification
+document.querySelectorAll('.plus-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const item = this.getAttribute('data-item');
+
+        if (cart[item]) {
+            cart[item].count++;
+            showNotification(`${item.charAt(0).toUpperCase() + item.slice(1)} quantity increased.`);
+        } else {
+            cart[item] = { count: 1 };
+            showNotification(`${item.charAt(0).toUpperCase() + item.slice(1)} added to cart.`);
+        }
+
+        updateCart();
+    });
+});
+
+// Update cart display and handle item removal
+function updateCart() {
+    const cartItems = document.getElementById('cartItems');
+    cartItems.innerHTML = '';
+
+    for (let item in cart) {
+        const li = document.createElement('li');
+        li.textContent = `${item.charAt(0).toUpperCase() + item.slice(1)} x${cart[item].count}`;
+
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.style.marginLeft = '10px';
+        removeButton.addEventListener('click', function() {
+            showNotification(`${item.charAt(0).toUpperCase() + item.slice(1)} removed from cart.`);
+            delete cart[item];
+            updateCart();
+        });
+
+        li.appendChild(removeButton);
+        li.classList.add('animate-add');
+        cartItems.appendChild(li);
+    }
+}
+
+// Scroll buttons functionality
+window.onscroll = function() {
+    const scrollToTopButton = document.getElementById('scrollToTop');
+    const scrollToBottomButton = document.getElementById('scrollToBottom');
+    const shouldShowButtons = document.body.scrollTop > 100 || document.documentElement.scrollTop > 100;
+
+    scrollToTopButton.style.display = shouldShowButtons ? "block" : "none";
+    scrollToBottomButton.style.display = shouldShowButtons ? "block" : "none";
+};
+
+document.getElementById('scrollToTop').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+document.getElementById('scrollToBottom').addEventListener('click', () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+});
+
+// Calculate ingredients based on number of persons
+document.getElementById('calculateButton').addEventListener('click', function() { 
+    const numberOfPersons = parseInt(document.getElementById('persons').value); 
+    if (!numberOfPersons || Object.keys(cart).length === 0) { 
+        alert('Please select at least one food item and enter the number of persons.'); 
+        return; 
+    } 
+
+    const ingredientsList = document.getElementById('ingredientsList'); 
+    ingredientsList.innerHTML = ''; 
+
+    for (let item in cart) { 
+        const { ingredients, preparationProcess } = calculateIngredients(item, numberOfPersons * cart[item].count); 
+
+        const itemHeader = document.createElement('h3'); 
+        itemHeader.textContent = `${item.charAt(0).toUpperCase() + item.slice(1)} (for ${numberOfPersons * cart[item].count} persons)`; 
+        ingredientsList.appendChild(itemHeader); 
+
+        ingredients.forEach(ingredient => { 
+            const li = document.createElement('li'); 
+            li.textContent = `${ingredient.name}: ${ingredient.amount}`; 
+            ingredientsList.appendChild(li); 
+        });
+
+        if (preparationProcess) {
+            const prepHeader = document.createElement('h4');
+            prepHeader.textContent = "Preparation Process:";
+            ingredientsList.appendChild(prepHeader);
+
+            const prepSteps = document.createElement('pre');
+            prepSteps.textContent = preparationProcess;
+            ingredientsList.appendChild(prepSteps);
+        }
+    } 
+
+    document.getElementById('output').style.display = 'block'; 
+});
+function calculateIngredients(item, totalPersons) {
+    let ingredients = [];
+    let preparationProcess = "";
+
+    if (item === 'Chicken biryani') {
+        ingredients.push(
+            { name: 'Rice', amount: `${250* totalPersons} grams` },
+            { name: 'water', amount: `${100* totalPersons}ml`},
+            { name: 'Oil', amount: `${50* totalPersons}ml`},
+            { name: 'Chicken', amount: `${150 * totalPersons} grams` },
+            { name: 'Onion', amount: `${20 * totalPersons} grams` },
+            { name: 'Tomato', amount: `${10* totalPersons} grams` },
+            { name: 'Green Chilli', amount: `${2* totalPersons}grams`},
+            { name: 'Turmeric', amount: `${ 1*totalPersons}teaspoon`},
+            { name: 'Red chilli powder', amount: `${2* totalPersons}tablespoons`},
+            { name: 'Curd', amount: `${50* totalPersons}grams`},
+            { name: 'Ginger garlic', amount: `${25* totalPersons}grams`},
+            { name: 'Bay leaves', amount: `${1* totalPersons}grams`},
+            { name: 'Cloves', amount: `${2* totalPersons}grams`},
+            { name: 'Cinnamon stick', amount: `${1* totalPersons}grams`},
+            { name: 'Star anise', amount: `${1* totalPersons}grams`},
+            { name: 'Coriander', amount: `${5* totalPersons} grams` },
+            { name: 'Mint leaves', amount: `${5* totalPersons}grams`},
+            { name: 'Ghee', amount: `${3* totalPersons}tablespoon`},
+            { name: 'Lemon', amount: `${1* totalPersons}tablespoon`},
+            );
+        preparationProcess =
+            "1. Marinate chicken with curd, biryani masala,Lemon and spices for at least 30 minutes.\n" +
+            "2. Heat oil in a pot and fry sliced onions until golden brown.\n" +
+            "3. Add marinated chicken and cook until it's half done.\n" +
+            "4. Add chopped tomatoes and cook until soft.\n" +
+            "5. Add soaked and drained rice and water, mix well, and bring to a boil.\n" +
+            "6. Cover the pot and cook on low heat until the rice is fully cooked.\n" +
+            "7. Garnish with mint, ghee and coriander leaves before serving.";
+    } 
+            // Function to get ingredients and preparation process based on the number of persons
+
+     else if (item === 'pongal') {
+        ingredients.push(
+            { name: 'Rice', amount: `${200 * totalPersons} grams` },
+            { name: 'Moong dal', amount: `${50 * totalPersons} grams` },
+            { name: 'Green chilli', amount: `${50 * totalPersons} grams` },
+            { name: 'Kaju', amount: `${10* totalPersons} grams` },
+            { name: 'Ginger', amount: `${10 * totalPersons} grams` },
+            { name: 'Black pepper', amount: `${1 * totalPersons} grams` },
+            { name: 'Cumin seeds', amount: `${1 * totalPersons} grams` },
+            { name: 'Salt', amount: 'to taste' },
+            { name: 'Ghee', amount: `${15 * totalPersons} grams` },
+        );
+        preparationProcess =
+            "1. Dry roast moong dal until golden brown.\n" +
+            "2. Cook rice and moong dal together with water and ghee until soft.\n" +
+            "3. In a pan, heat ghee, add ginger, black pepper, and cumin seeds.\n" +
+            "4. Add the cooked rice and dal mixture, and mix well.\n" +
+            "5. Season with salt and serve hot.";
+    } 
+    else if (item === 'chicken curry') {
+    ingredients.push(
+        { name: 'Chicken', amount: `${180 * totalPersons} grams` },
+        { name: 'Onion', amount: `${80 * totalPersons} grams` },
+        { name: 'Tomato', amount: `${100 * totalPersons} grams` },
+        { name: 'Green Chilli', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger', amount: `${10 * totalPersons} grams` },
+        { name: 'Garlic', amount: `${10 * totalPersons} grams` },
+        { name: 'Garam masala', amount: `${5 * totalPersons} grams` },
+        { name: 'Salt', amount: 'to taste' },
+        { name: 'Oil', amount: `${20 * totalPersons} grams` },
+    );
+    preparationProcess =
+        "1. Heat oil in a pan and sauté chopped onions until golden brown.\n" +
+        "2. Add minced ginger and garlic, and sauté for a minute.\n" +
+        "3. Add chopped tomatoes and cook until soft.\n" +
+        "4. Add chicken pieces and cook until browned.\n" +
+        "5. Stir in garam masala, salt, and a little water, then simmer until chicken is cooked through.\n" +
+        "6. Serve hot with rice or bread.";
+
+} else if (item === 'paneer curry') {
+    ingredients.push(
+        { name: 'Paneer', amount: `${100 * totalPersons} grams` },
+        { name: 'Onion', amount: `${80* totalPersons} grams` },
+        { name: 'Tomato', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger', amount: `${10 * totalPersons} grams` },
+        { name: 'Garlic', amount: `${10 * totalPersons} grams` },
+        { name: 'Garam masala', amount: `${10 * totalPersons} grams` },
+        { name: 'Cumin seeds', amount: `${5 * totalPersons} grams` },
+        { name: 'Kaju', amount: `${10* totalPersons} grams` },
+        { name: 'Turmeric powder', amount: `${5 * totalPersons} grams` },
+        { name: 'Coriander', amount: `${5* totalPersons} grams` },
+        { name: 'Salt', amount: 'to taste' },
+        { name: 'Oil', amount: `${20 * totalPersons} grams` },
+    );
+    preparationProcess =
+        "1. Heat oil in a pan and add cumin seeds until they splutter.\n" +
+        "2. Add chopped onions and sauté until golden brown.\n" +
+        "3. Add minced ginger and garlic, and sauté for a minute.\n" +
+        "4. Add chopped tomatoes and cook until soft.\n" +
+        "5. Stir in turmeric powder and salt, then add cubed paneer.\n" +
+        "6. Cook for a few minutes, then serve hot with rice or bread.";
+
+} else if (item === 'jeera rice') {
+    ingredients.push(
+        { name: 'Rice', amount: `${250 * totalPersons} grams` },
+        { name: 'Water', amount: `${2 * totalPersons} cups` },
+        { name: 'Oil', amount: `${50 * totalPersons} ml` },
+        { name: 'Cumin seeds', amount: `${10* totalPersons} grams` },
+        { name: 'Ghee', amount: `${15 * totalPersons} grams` },
+        { name: 'Salt', amount: 'to taste' },
+    );
+    preparationProcess =
+        "1. Rinse the rice and soak it in water for 30 minutes, then drain.\n" +
+        "2. In a pot, heat ghee and add cumin seeds until they splutter.\n" +
+        "3. Add the drained rice and sauté for a couple of minutes.\n" +
+        "4. Add water and salt, then bring to a boil.\n" +
+        "5. Reduce heat, cover, and simmer until the rice is cooked and water is absorbed.\n" +
+        "6. Fluff the rice with a fork and serve hot.";
+} else if (item === 'pulihora') {
+        ingredients.push(
+            { name: 'Rice', amount: `${250 * totalPersons} grams` },
+            { name: 'Tamarind pulp', amount: `${10* totalPersons}ml` },
+            { name: 'Turmeric powder', amount: `${2 * totalPersons} tablespoon` },
+            { name: 'Mustard seeds', amount: `${5 * totalPersons} grams` },
+            { name: 'Curry leaves', amount: `${2 * totalPersons} grams` },
+            { name: 'Salt', amount: 'to taste' },
+            { name: 'Peanuts', amount: `${30 * totalPersons} grams` }
+        );
+        preparationProcess =
+            "1. Cook rice and let it cool.\n" +
+            "2. In a pan, heat oil, add mustard seeds, and let them splutter.\n" +
+            "3. Add curry leaves and peanuts, and sauté until golden.\n" +
+            "4. Add tamarind pulp, turmeric powder, and salt. Mix well.\n" +
+            "5. Combine the mixture with the cooled rice and serve.";
+    } else if (item === 'curd rice') {
+        ingredients.push(
+            { name: 'Cooked rice', amount: `${200 * totalPersons} grams` },
+            { name: 'Yogurt', amount: `${100 * totalPersons} grams` },
+            { name: 'Salt', amount: 'to taste' },
+            { name: 'Coriander leaves', amount: `${5 * totalPersons} grams` },
+            { name: 'Mustard seeds', amount: `${5 * totalPersons} grams` },
+            { name: 'Curry leaves', amount: `${2 * totalPersons} grams` },
+            { name: 'Green chili', amount: `${1 * totalPersons}` }
+        );
+        preparationProcess =
+            "1. Mix cooked rice with yogurt and salt.\n" +
+            "2. In a pan, heat oil, add mustard seeds, and let them splutter.\n" +
+            "3. Add curry leaves and green chili, and sauté briefly.\n" +
+            "4. Pour the tempering over the rice mixture and garnish with coriander leaves.";
+    } 
+    
+else if (item === 'tandoori chicken') {
+    ingredients.push(
+        { name: 'Chicken', amount: `${300* totalPersons} grams` },
+        { name: 'Yogurt', amount: `${100* totalPersons} grams` },
+        { name: 'Tandoori masala', amount: `${30 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${20 * totalPersons} grams` },
+        { name: 'Lemon juice', amount: `${30 * totalPersons} ml` },
+        { name: 'Salt', amount: 'to taste' },
+        { name: 'Oil', amount: `${50 * totalPersons} ml` }
+    );
+    preparationProcess =
+        "1. Marinate chicken with yogurt, tandoori masala, ginger-garlic paste, lemon juice, and salt for at least 2 hours.\n" +
+        "2. Preheat the oven to 200°C (392°F).\n" +
+        "3. Place the marinated chicken on a baking tray and brush with oil.\n" +
+        "4. Bake for 30-40 minutes, turning occasionally, until fully cooked.\n" +
+        "5. Serve hot with mint chutney and onion rings.";
+}
+
+// Adding ingredients for Gulab Jamun
+else if (item === 'gulab jamun') {
+    ingredients.push(
+        { name: 'Milk powder', amount: `${50 * totalPersons} grams` },
+        { name: 'All-purpose flour', amount: `${50 * totalPersons} grams` },
+        { name: 'Baking soda', amount: `${1 * totalPersons} teaspoon` },
+        { name: 'Ghee', amount: `${50 * totalPersons} grams` },
+        { name: 'Milk', amount: `${100 * totalPersons} ml` },
+        { name: 'Sugar', amount: `${80 * totalPersons} grams` },
+        { name: 'Water', amount: `${300 * totalPersons} ml` },
+        { name: 'Cardamom powder', amount: `${3* totalPersons}teaspoon` },
+        { name: 'Rose water', amount: `${10 * totalPersons} ml` }
+    );
+    preparationProcess =
+        "1. In a bowl, mix milk powder, all-purpose flour, and baking soda.\n" +
+        "2. Add ghee and milk to form a soft dough. Let it rest for 15 minutes.\n" +
+        "3. In a pan, prepare sugar syrup by boiling sugar and water with cardamom and rose water.\n" +
+        "4. Shape the dough into small balls and deep fry in ghee until golden brown.\n" +
+        "5. Soak the fried balls in warm sugar syrup for at least 30 minutes before serving.";
+}
+
+// Adding ingredients for Tomato Rice
+else if (item === 'tomato rice') {
+    ingredients.push(
+        { name: 'Rice', amount: `${250* totalPersons} grams` },
+        { name: 'Tomatoes', amount: `${100 * totalPersons} grams` },
+        { name: 'Onion', amount: `${60 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${10 * totalPersons} grams` },
+        { name: 'Green chilies', amount: `${2 * totalPersons}` },
+        { name: 'Turmeric powder', amount: `${2 * totalPersons} teaspoon` },
+        { name: 'Coriander powder', amount: `${5 * totalPersons} teaspoon` },
+        { name: 'Salt', amount: 'to taste' },
+        { name: 'Oil', amount: `${30 * totalPersons} ml` },
+        { name: 'Coriander leaves', amount: `${10 * totalPersons} grams` }
+    );
+    preparationProcess =
+        "1. Heat oil in a pan and sauté chopped onions until golden brown.\n" +
+        "2. Add ginger-garlic paste and green chilies, and sauté for a minute.\n" +
+        "3. Add chopped tomatoes, turmeric powder, coriander powder, and salt. Cook until tomatoes are soft.\n" +
+        "4. Add soaked rice and water (1:2 ratio) and bring to a boil.\n" +
+        "5. Cover and cook on low heat until rice is fully cooked. Garnish with coriander leaves.";
+}
+
+// Adding ingredients for Apricot Delight
+else if (item === 'double ka meetha') {
+        ingredients.push(
+            { name: 'Bread', amount: `${6 * totalPersons} slices` },
+            { name: 'Milk', amount: `${150 * totalPersons} ml` },
+            { name: 'Sugar', amount: `${80 * totalPersons} grams` },
+            { name: 'Ghee', amount: `${100 * totalPersons} grams` },
+            { name: 'Cardamom powder', amount: `${5 * totalPersons} grams` },
+            { name: 'Almonds', amount: `${30 * totalPersons} grams` },
+            { name: 'Cashews', amount: `${30 * totalPersons} grams` }
+        );
+        preparationProcess =
+            "1. Cut bread into triangles and fry in ghee until golden brown.\n" +
+            "2. In a pan, boil milk and add sugar. Stir until dissolved.\n" +
+             "3. Add cardamom powder to the milk and mix well.\n" +
+             "4. Place the fried bread pieces in the pan with the milk and sugar mixture. Allow the bread to soak for about 10-15 minutes.\n" +
+             "5. Optionally, fry almonds and cashews in a bit of ghee until golden brown, and sprinkle them over the soaked bread.\n" +
+              "6. Transfer to a serving dish and serve warm or chilled.";
+
+    }else if (item === 'pasta') {
+        ingredients.push(
+            { name: 'pasta', amount: `${200 * totalPersons} grams` },
+            { name: 'water', amount: `${300 * totalPersons} ml` },
+            { name: 'salt', amount: `${10 * totalPersons} grams` },
+            { name: 'olive oil', amount: `${15 * totalPersons} ml` },
+            { name: 'garlic', amount: `${5 * totalPersons} grams` },
+            { name: 'parmesan cheese', amount: `${30 * totalPersons} grams` },
+            { name: 'basil', amount: `${5 * totalPersons} grams` }
+        );
+        preparationProcess =
+            '1. Boil water in a large pot and add salt.\n' +
+            '2. Add pasta to the boiling water and cook according to package instructions until al dente.\n' +
+            '3. In a separate pan, heat olive oil and sauté minced garlic until fragrant.\n' +
+            '4. Drain the pasta and reserve some pasta water.\n' +
+            '5. Add the drained pasta to the pan with garlic, and mix well. If needed, add reserved pasta water to achieve desired consistency.\n' +
+            '6. Stir in grated parmesan cheese and fresh basil.\n' +
+            '7. Serve hot, garnished with extra parmesan and basil if desired.';
+    } else if (item === 'egg curry') {
+        ingredients.push(
+            { name: 'eggs', amount: `${2 * totalPersons} pieces` },
+            { name: 'onion', amount: `${6 * totalPersons} grams` },
+            { name: 'tomato', amount: `${20 * totalPersons} grams` },
+            { name: 'mirchi', amount: `${2* totalPersons} grams` },
+            { name: 'ginger-garlic paste', amount: `${10 * totalPersons} grams` },
+            { name: 'coriander powder', amount: `${2 * totalPersons} teaspoon` },
+            { name: 'turmeric powder', amount: `${2 * totalPersons} grams` },
+            { name: 'garam masala', amount: `${3 * totalPersons} teaspoon` },
+            { name: 'coriander leaves', amount: `${3* totalPersons} grams` }
+        );
+        preparationProcess =
+            '1. Boil eggs, peel them, and set aside.\n' +
+            '2. Heat oil in a pan, sauté onions, tomatoes, and ginger-garlic paste until onions turn golden brown.\n' +
+            '3. Add spices (mirchi, coriander powder, turmeric, and garam masala) and cook for a few minutes.\n' +
+            '4. Add boiled eggs and cook for 5-10 minutes.\n' +
+            '5. Garnish with coriander leaves and serve hot.';
+    } else if (item === 'fried rice') {
+        ingredients.push(
+            { name: 'Rice', amount: `${200 * totalPersons} grams` },
+            { name: 'Vegetables (carrot, peas, etc.)', amount: `${100 * totalPersons} grams` },
+            { name: 'Oil', amount: `${50 * totalPersons} ml` },
+            { name: 'Soy Sauce', amount: `${20 * totalPersons} ml` },
+            { name: 'Eggs', amount: `${3 * totalPersons} pieces` },
+            { name: 'Spring Onion', amount: `${10 * totalPersons} grams` },
+            { name: 'Oil', amount: `${15 * totalPersons} ml` }
+        );
+        preparationProcess =
+            '1. Cook the rice and let it cool.\n' +
+            '2. Heat oil in a pan, scramble eggs, and set them aside.\n' +
+            '3. Sauté vegetables, add rice, soy sauce, and scrambled eggs.\n' +
+            '4. Cook for a few more minutes and garnish with spring onions.';
+    } else if (item === 'rumali roti') {
+        ingredients.push(
+            { name: 'maida flour', amount: `${25 * totalPersons} grams` },
+            { name: 'salt', amount: `${4 * totalPersons} grams` },
+            { name: 'water', amount: `${25 * totalPersons} ml` }
+        );
+        preparationProcess =
+            "1. Mix maida flour, salt, and water to make a smooth dough.\n" +
+            "2. Roll the dough into very thin rounds.\n" +
+            "3. Cook on a hot tawa until both sides are golden brown.";
+    } 
+    else if (item === 'paneer 65') {
+    ingredients.push(
+        { name: 'Paneer cubes', amount: `${250 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Cornflour', amount: `${30 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: '1 tablespoon' },
+        { name: 'Spices', amount: 'to taste' },
+        { name: 'Oil', amount: 'for deep frying' },
+        { name: 'Curry leaves', amount: 'for garnish' }
+    );
+    preparationProcess = 
+        "1. Marinate paneer cubes with yogurt, ginger-garlic paste, spices, and cornflour.\n" +
+        "2. Deep fry the marinated paneer until crispy and golden.\n" +
+        "3. Garnish with curry leaves before serving.";
+} else if (item === 'baby corn 65') {
+    ingredients.push(
+        { name: 'Baby corn', amount: `${200 * totalPersons} grams` },
+        { name: 'Cornflour', amount: `${40 * totalPersons} grams` },
+        { name: 'Rice flour', amount: `${20 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: '1 tablespoon' },
+        { name: 'Spices', amount: 'to taste' },
+        { name: 'Oil', amount: 'for deep frying' },
+        { name: 'Curry leaves', amount: 'for garnish' }
+    );
+    preparationProcess = 
+        "1. Marinate baby corn with ginger-garlic paste, spices, cornflour, and rice flour.\n" +
+        "2. Deep fry the marinated baby corn until crispy and golden.\n" +
+        "3. Garnish with curry leaves before serving.";
+} else if (item === 'chilli gobi') {
+    ingredients.push(
+        { name: 'Cauliflower florets', amount: `${300 * totalPersons} grams` },
+        { name: 'Cornflour', amount: `${50 * totalPersons} grams` },
+        { name: 'All-purpose flour', amount: `${30 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: '1 tablespoon' },
+        { name: 'Chilli sauce', amount: '2 tablespoons' },
+        { name: 'Capsicum', amount: '1, chopped' },
+        { name: 'Onion', amount: '1, chopped' },
+        { name: 'Oil', amount: 'for deep frying' }
+    );
+    preparationProcess = 
+        "1. Marinate cauliflower with ginger-garlic paste, cornflour, and all-purpose flour.\n" +
+        "2. Deep fry the marinated cauliflower until crispy.\n" +
+        "3. Stir-fry capsicum and onion, add chilli sauce, and toss in the fried cauliflower before serving.";
+} else if (item === 'chilli mushroom') {
+    ingredients.push(
+        { name: 'Mushrooms', amount: `${250 * totalPersons} grams` },
+        { name: 'Cornflour', amount: `${50 * totalPersons} grams` },
+        { name: 'All-purpose flour', amount: `${30 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: '1 tablespoon' },
+        { name: 'Chilli sauce', amount: '2 tablespoons' },
+        { name: 'Capsicum', amount: '1, chopped' },
+        { name: 'Onion', amount: '1, chopped' },
+        { name: 'Oil', amount: 'for deep frying' }
+    );
+    preparationProcess = 
+        "1. Marinate mushrooms with ginger-garlic paste, cornflour, and all-purpose flour.\n" +
+        "2. Deep fry the marinated mushrooms until crispy.\n" +
+        "3. Stir-fry capsicum and onion, add chilli sauce, and toss in the fried mushrooms before serving.";
+}
+else if (item === 'chicken manchurian') {
+    ingredients.push(
+        { name: 'Boneless chicken cubes', amount: `${300 * totalPersons} grams` },
+        { name: 'Cornflour', amount: `${40 * totalPersons} grams` },
+        { name: 'All-purpose flour', amount: `${30 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: '1 tablespoon' },
+        { name: 'Soy sauce', amount: '2 tablespoons' },
+        { name: 'Chilli sauce', amount: '2 tablespoons' },
+        { name: 'Capsicum', amount: '1, chopped' },
+        { name: 'Onion', amount: '1, chopped' },
+        { name: 'Oil', amount: 'for deep frying' }
+    );
+    preparationProcess = 
+        "1. Marinate chicken with ginger-garlic paste, cornflour, and all-purpose flour. Add a pinch of salt and mix well.\n" +
+        "2. Deep fry the marinated chicken until golden and crispy, then set aside.\n" +
+        "3. In a separate pan, stir-fry capsicum and onion until they are slightly soft.\n" +
+        "4. Add soy sauce, chilli sauce, and a little water to make a thick sauce.\n" +
+        "5. Toss in the fried chicken and coat evenly with the sauce. Cook for an additional 2-3 minutes.\n" +
+        "6. Serve hot, garnished with chopped spring onions.";
+} else if (item === 'chicken drumstick') {
+    ingredients.push(
+        { name: 'Chicken drumsticks', amount: `${3 * totalPersons} pieces` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: '3 tablespoon' },
+        { name: 'Red chilli powder', amount: '2 teaspoon' },
+        { name: 'Turmeric powder', amount: '1/2 teaspoon' },
+        { name: 'Garam masala', amount: '1 teaspoon' },
+        { name: 'Oil', amount: 'for deep frying' }
+    );
+    preparationProcess = 
+        "1. Marinate chicken drumsticks with yogurt, ginger-garlic paste, red chilli powder, turmeric, and garam masala. Add salt to taste.\n" +
+        "2. Let the marinated drumsticks sit for at least 30 minutes to allow the flavors to infuse.\n" +
+        "3. Heat oil in a pan and deep fry the drumsticks on medium heat until they are fully cooked and have a crispy exterior.\n" +
+        "4. For added flavor, you can finish the drumsticks on a grill for a smoky taste.\n" +
+        "5. Serve with a squeeze of lemon juice and a side of onion rings.";
+} else if (item === 'mutton biryani') {
+    ingredients.push(
+        { name: 'Mutton pieces', amount: `${150 * totalPersons} grams` },
+        { name: 'Basmati rice', amount: `${250* totalPersons} grams` },
+        { name: 'Yogurt', amount: `${100 * totalPersons} grams` },
+        { name: 'Onions', amount: `${20*totalPersons}grams` },
+        { name: 'Tomatoes', amount: `${30*totalPersons}grams` },
+        { name: 'Ginger-garlic paste', amount: `${25* totalPersons}grams` },
+        { name: 'Biryani masala', amount: `${2* totalPersons}table spoons`},
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+    );
+    preparationProcess = 
+        "1. Marinate the mutton pieces with yogurt, biryani masala, ginger-garlic paste, and salt. Let it marinate for at least an hour.\n" +
+        "2. Heat oil or ghee in a pot and fry the sliced onions until golden brown. Remove half of the onions and set aside for garnish.\n" +
+        "3. Add the marinated mutton to the pot and cook until the meat is browned and the spices are aromatic.\n" +
+        "4. Add chopped tomatoes and cook until they are soft, then add water and cook the mutton until tender.\n" +
+        "5. Meanwhile, partially cook the basmati rice in boiling water with a pinch of salt and whole spices (optional).\n" +
+        "6. Layer the cooked mutton and the partially cooked rice in a pot. Sprinkle fried onions and mint leaves on top.\n" +
+        "7. Cover and cook on low heat (dum) for 20-30 minutes to allow the flavors to meld.\n" +
+        "8. Serve hot with raita and garnish with additional fried onions and mint leaves.";
+}
+
+else if (item === 'chicken 65') {
+        ingredients.push(
+            { name: 'curryleaves', amount: `${5 * totalPersons} grams` },
+            { name: 'mirchi', amount: `${5 * totalPersons} pieces` },
+            { name: 'chicken', amount: `${150 * totalPersons} grams` },
+            { name: 'coriander', amount: `${1 * totalPersons} grams` },
+            { name: 'curd', amount: `${50 * totalPersons} grams` },
+            { name: 'chicken masala', amount: `${3 * totalPersons} grams` },
+            { name: 'green chilli sauce', amount: `${3 * totalPersons} grams` },
+            { name: 'tomato sauce', amount: `${3 * totalPersons} grams` }
+        );
+        preparationProcess = 
+    '1. Marinate the chicken with ginger-garlic paste, spices, yogurt, and lemon juice. Let it rest for at least 30 minutes.\n' +
+    '2. Prepare a batter using all-purpose flour, cornstarch, salt, and a little water.\n' +
+    '3. Coat the marinated chicken pieces in the batter.\n' +
+    '4. Deep fry the chicken in hot oil until golden brown and crispy. Drain on paper towels.\n' +
+    '5. (Optional) Temper with mustard seeds, curry leaves, and green chilies, and sauté the fried chicken for a minute.\n' +
+    '6. Serve hot, garnished with coriander leaves or lemon wedges if desired.';
+
+    }
+        else if (item === 'sambar') {
+        ingredients.push(
+            { name: 'Toor dal', amount: `${50 * totalPersons} grams` },
+            { name: 'Tamarind', amount: `${10 * totalPersons} grams` },
+            { name: 'Mixed vegetables (carrot, drumstick, etc.)', amount: `${100 * totalPersons} grams` },
+            { name: 'Sambar powder', amount: `${5 * totalPersons} grams` },
+            { name: 'Mustard seeds', amount: `${1 * totalPersons} grams` },
+            { name: 'Curry leaves', amount: `${2 * totalPersons} grams` }
+        );
+        preparationProcess = 
+            '1. Cook the toor dal in a pressure cooker until soft.\n' +
+            '2. Add tamarind juice, mixed vegetables, and sambar powder to the dal and cook.\n' +
+            '3. Temper mustard seeds and curry leaves in oil, and add to the sambar.\n' +
+            '4. Serve hot with rice or idli.';
+    } else if (item === 'dal') {
+        ingredients.push(
+            { name: 'Lentils (moong dal)', amount: `${50 * totalPersons} grams` },
+            { name: 'Turmeric powder', amount: `${2 * totalPersons} grams` },
+            { name: 'Salt', amount: 'to taste' },
+            { name: 'Ghee', amount: `${5 * totalPersons} grams` },
+            { name: 'Cumin seeds', amount: `${2 * totalPersons} grams` },
+            { name: 'Garlic', amount: `${5 * totalPersons} grams` }
+        );
+        preparationProcess = 
+            '1. Cook the lentils with turmeric powder and salt until soft.\n' +
+            '2. Heat ghee, add cumin seeds and garlic, and fry until golden brown.\n' +
+            '3. Pour the tempering over the cooked lentils and mix well.\n' +
+            '4. Serve hot with rice or roti.';
+    } else if (item === 'salad') {
+        ingredients.push(
+            { name: 'Cucumber', amount: `${50 * totalPersons} grams` },
+            { name: 'Tomato', amount: `${50 * totalPersons} grams` },
+            { name: 'Onion', amount: `${30 * totalPersons} grams` },
+            { name: 'Lemon juice', amount: `${5 * totalPersons} ml` },
+            { name: 'Salt', amount: 'to taste' },
+            { name: 'Pepper', amount: 'to taste' }
+        );
+        preparationProcess =
+            '1. Chop the cucumber, tomato, and onion into small pieces.\n' +
+            '2. Mix with lemon juice, salt, and pepper.\n' +
+            '3. Serve fresh and chilled.';
+    } 
+    else if (item === 'apollo fish biryani') {
+    ingredients.push(
+        { name: 'Fish fillets', amount: `${150 * totalPersons} grams` },
+        { name: 'Basmati rice', amount: `${250 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${5* totalPersons} table spoons` },
+        { name: 'Biryani masala', amount: `${3* totalPersons} table spoons` },
+        { name: 'Onions', amount: `${6* totalPersons} pieces` },
+        { name: 'Green chilies',amount : `${5* totalPersons} pieces` },
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+    );
+    preparationProcess = 
+        "1. Marinate the fish fillets with yogurt, ginger-garlic paste, and biryani masala for 30 minutes.\n" +
+        "2. Fry the marinated fish pieces in hot oil until golden brown, then set aside.\n" +
+        "3. In the same oil, fry the sliced onions until they are golden and crispy. Reserve some for garnish.\n" +
+        "4. Add green chilies and mint leaves to the pan and sauté for a minute to release the aroma.\n" +
+        "5. Stir in the partially cooked basmati rice and mix gently to avoid breaking the grains.\n" +
+        "6. Layer the fried fish pieces over the rice, drizzle some saffron milk (optional) for added color, and sprinkle with fried onions.\n" +
+        "7. Cover the pot tightly with a lid or aluminum foil and cook on low heat (dum) for 20-25 minutes.\n" +
+        "8. Let the biryani rest for a few minutes before fluffing the rice with a fork. Serve hot with raita and lemon wedges.";
+} else if (item === 'egg biryani') {
+    ingredients.push(
+        { name: 'Eggs', amount: `${3 * totalPersons} boiled` },
+        { name: 'Basmati rice', amount: `${200 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${5* totalPersons} table spoons` },
+        { name: 'Biryani masala', amount: `${3* totalPersons} table spoons` },
+        { name: 'Onions', amount: `${6* totalPersons} pieces` },
+        { name: 'Green chilies',amount : `${5* totalPersons} pieces` },
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+);
+       
+    preparationProcess = 
+        "1. Boil the eggs, peel them, and make small slits for better flavor absorption. Fry in a little oil until golden brown.\n" +
+        "2. In the same pan, fry the sliced onions until they are golden brown. Reserve some for garnish.\n" +
+        "3. Add ginger-garlic paste and cook until the raw smell disappears, then add chopped tomatoes and cook until they are soft.\n" +
+        "4. Add biryani masala, yogurt, and a little water to make a thick gravy. Allow it to simmer for a few minutes.\n" +
+        "5. Add the fried eggs to the gravy and cook for another 2-3 minutes so the eggs absorb the flavors.\n" +
+        "6. Layer the partially cooked basmati rice over the egg gravy. Sprinkle with mint leaves and fried onions.\n" +
+        "7. Cover the pot and cook on low heat (dum) for 20-25 minutes. Let the biryani rest for 10 minutes before serving.\n" +
+        "8. Serve hot with a side of raita and garnish with coriander leaves.";
+} else if (item === 'chicken biryani') {
+    ingredients.push(
+        { name: 'Chicken pieces', amount: `${150 * totalPersons} grams` },
+        { name: 'Basmati rice', amount: `${200 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${100 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${5* totalPersons} table spoons` },
+        { name: 'Biryani masala', amount: `${3* totalPersons} table spoons` },
+        { name: 'Onions', amount: `${6* totalPersons} pieces` },
+        { name: 'Green chilies',amount : `${5* totalPersons} pieces` },
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+    );
+    preparationProcess = 
+        "1. Marinate chicken pieces with yogurt, ginger-garlic paste, biryani masala, and salt for at least an hour.\n" +
+        "2. Fry the marinated chicken until the pieces are crispy on the outside and tender on the inside, then set aside.\n" +
+        "3. In the same pan, fry sliced onions until they are golden brown. Reserve some for garnish.\n" +
+        "4. Add green chilies, mint leaves, and a little bit of the leftover marinade, cooking for a few minutes.\n" +
+        "5. Mix in the partially cooked basmati rice and stir gently to distribute the flavors evenly.\n" +
+        "6. Layer the fried chicken pieces over the rice. Drizzle with ghee and sprinkle with saffron milk (optional).\n" +
+        "7. Cover and cook on low heat (dum) for 25-30 minutes to allow the flavors to meld.\n" +
+        "8. Let it rest for 5 minutes before fluffing the rice and serving with raita and fried onions on top.";
+} else if (item === 'prawns biryani') {
+    ingredients.push(
+        { name: 'Prawns', amount: `${150 * totalPersons} grams` },
+        { name: 'Basmati rice', amount: `${200 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${5* totalPersons} table spoons` },
+        { name: 'Biryani masala', amount: `${3* totalPersons} table spoons` },
+        { name: 'Onions', amount: `${6* totalPersons} pieces` },
+        { name: 'Green chilies',amount : `${5* totalPersons} pieces` },
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+    );
+    preparationProcess = 
+        "1. Marinate prawns with yogurt, ginger-garlic paste, biryani masala, and salt for 30 minutes.\n" +
+        "2. Fry the marinated prawns in hot oil until they are just cooked, then set aside to avoid overcooking.\n" +
+        "3. In the same pan, fry the onions until golden, then add chopped tomatoes and cook until they are soft and mushy.\n" +
+        "4. Add the prawns back to the pan and simmer with a bit of water to create a flavorful gravy.\n" +
+        "5. Layer the partially cooked basmati rice over the prawn gravy. Drizzle with saffron-infused milk and add mint leaves.\n" +
+        "6. Cover and cook on low heat (dum) for 20-25 minutes, allowing the rice to absorb the prawn flavors fully.\n" +
+        "7. Let the biryani rest for a few minutes before serving. Fluff the rice and serve hot with a side of raita and lemon wedges.\n" +
+        "8. Garnish with fresh coriander and fried onions for an extra burst of flavor.";
+}
+else if (item === 'kaju paneer biryani') {
+    ingredients.push(
+        { name: 'Paneer', amount: `${150 * totalPersons} grams` },
+        { name: 'Cashews', amount: `${50 * totalPersons} grams` },
+        { name: 'Basmati rice', amount: `${200 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${5* totalPersons} table spoons` },
+        { name: 'Biryani masala', amount: `${3* totalPersons} table spoons` },
+        { name: 'Onions', amount: `${6* totalPersons} pieces` },
+        { name: 'Green chilies',amount : `${5* totalPersons} pieces` },
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+    );
+    preparationProcess = 
+        "1. Soak the basmati rice in water for 30 minutes and partially cook it. Set aside.\n" +
+        "2. Fry the cashews until golden and keep them aside for garnish.\n" +
+        "3. In the same pan, fry the sliced onions until they turn golden brown. Add ginger-garlic paste and cook until fragrant.\n" +
+        "4. Add yogurt, biryani masala, and marinated paneer cubes. Cook until the paneer is well-coated with the spices.\n" +
+        "5. Layer the partially cooked rice over the paneer mixture. Add fried cashews, mint leaves, and a drizzle of ghee.\n" +
+        "6. Cover the pot and cook on low heat (dum) for 20-25 minutes to let the flavors blend.\n" +
+        "7. Let it rest for 5 minutes, then fluff the rice with a fork before serving.\n" +
+        "8. Garnish with more fried cashews and serve hot with raita.";
+} else if (item === 'paneer biryani') {
+    ingredients.push(
+        { name: 'Paneer', amount: `${150 * totalPersons} grams` },
+        { name: 'Basmati rice', amount: `${200 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${5* totalPersons} table spoons` },
+        { name: 'Biryani masala', amount: `${3* totalPersons} table spoons` },
+        { name: 'Onions', amount: `${6* totalPersons} pieces` },
+        { name: 'Green chilies',amount : `${5* totalPersons} pieces` },
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+    );
+    preparationProcess = 
+        "1. Marinate paneer with yogurt, ginger-garlic paste, and biryani masala for 30 minutes.\n" +
+        "2. In a pan, fry the marinated paneer until it is lightly browned, then set aside.\n" +
+        "3. Fry the sliced onions in the same pan until they are golden brown. Reserve some for garnish.\n" +
+        "4. Add the green chilies and sauté for a minute. Mix in the marinated paneer and cook for a few minutes.\n" +
+        "5. Layer the partially cooked rice on top of the paneer mixture. Sprinkle with mint leaves and fried onions.\n" +
+        "6. Drizzle with a little ghee, cover tightly, and cook on low heat (dum) for 20-25 minutes.\n" +
+        "7. Let the biryani rest for 5 minutes before serving. Fluff the rice gently.\n" +
+        "8. Serve hot with a side of raita and a lemon wedge.";
+} else if (item === 'mushroom biryani') {
+    ingredients.push(
+        { name: 'Mushrooms', amount: `${150 * totalPersons} grams, sliced` },
+        { name: 'Basmati rice', amount: `${200 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${5* totalPersons} table spoons` },
+        { name: 'Biryani masala', amount: `${3* totalPersons} table spoons` },
+        { name: 'Onions', amount: `${6* totalPersons} pieces` },
+        { name: 'Green chilies',amount : `${5* totalPersons} pieces` },
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+    );
+    preparationProcess = 
+        "1. Heat oil in a pan and sauté the sliced mushrooms until they release moisture and become slightly browned.\n" +
+        "2. In the same pan, fry the sliced onions until golden brown. Add the ginger-garlic paste and cook until fragrant.\n" +
+        "3. Add chopped tomatoes and cook until they become soft and blend into the mixture.\n" +
+        "4. Mix in the yogurt, biryani masala, and sautéed mushrooms. Cook for a few more minutes.\n" +
+        "5. Layer the partially cooked basmati rice over the mushroom mixture. Add mint leaves and drizzle with ghee.\n" +
+        "6. Cover and cook on low heat (dum) for 20-25 minutes to infuse the flavors.\n" +
+        "7. Let the biryani rest before serving. Fluff the rice and garnish with fresh coriander leaves.\n" +
+        "8. Serve hot with raita.";
+} else if (item === 'spring onion biryani') {
+    ingredients.push(
+        { name: 'Spring onions', amount: `${150 * totalPersons} grams, chopped` },
+        { name: 'Basmati rice', amount: `${200 * totalPersons} grams` },
+        { name: 'Yogurt', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${5* totalPersons} table spoons` },
+        { name: 'Biryani masala', amount: `${3* totalPersons} table spoons` },
+        { name: 'Onions', amount: `${6* totalPersons} pieces` },
+        { name: 'Green chilies',amount : `${5* totalPersons} pieces` },
+        { name: 'Mint leaves', amount: 'handful' },
+        { name: 'Oil or ghee', amount: 'as needed' }
+    );
+    preparationProcess = 
+        "1. Fry the sliced onions in hot oil until they turn golden brown. Reserve some for garnish.\n" +
+        "2. Add the chopped spring onions and sauté until they soften and reduce slightly.\n" +
+        "3. Stir in the ginger-garlic paste and green chilies. Cook until the raw smell disappears.\n" +
+        "4. Mix in the yogurt and biryani masala. Cook until the mixture thickens.\n" +
+        "5. Layer the partially cooked rice over the spring onion mixture. Add mint leaves and fried onions.\n" +
+        "6. Drizzle with a little ghee, cover tightly, and cook on low heat (dum) for 20-25 minutes.\n" +
+        "7. Allow the biryani to rest for 5 minutes before serving. Fluff the rice gently.\n" +
+        "8. Serve hot with a side of raita and garnish with fresh coriander.";
+}
+else if (item === 'rasam') {
+        ingredients.push(
+            { name: 'Tamarind', amount: `${10 * totalPersons} grams` },
+            { name: 'Tomato', amount: `${20 * totalPersons} grams` },
+            { name: 'Rasam powder', amount: `${5 * totalPersons} grams` },
+            { name: 'Cumin seeds', amount: `${1.5* totalPersons} grams` },
+            { name: 'Coriander leaves', amount: `${2 * totalPersons} grams` }
+        );
+        preparationProcess =
+            '1. Soak tamarind in water and extract the juice.\n' +
+            '2. Add chopped tomato, rasam powder, and water, and bring to a boil.\n' +
+            '3. Temper with cumin seeds and garnish with coriander leaves.\n' +
+            '4. Serve hot with rice.';
+    }else if (item === 'mutton curry') {
+    ingredients.push(
+        { name: 'Mutton', amount: `${100 * totalPersons} grams` },
+        { name: 'Onions', amount: `${50 * totalPersons} grams` },
+        { name: 'Tomato', amount: `${30 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${10 * totalPersons} grams` },
+        { name: 'Red chili powder', amount: `${2 * totalPersons} grams` },
+        { name: 'Turmeric powder', amount: `${1 * totalPersons} grams` },
+        { name: 'Coriander powder', amount: `${5 * totalPersons} grams` },
+        { name: 'Garam masala', amount: `${3 * totalPersons} grams` },
+        { name: 'Oil', amount: `${10 * totalPersons} ml` },
+        { name: 'Coriander leaves', amount: `${5 * totalPersons} grams` }
+    );
+    preparationProcess =
+        '1. Heat oil in a pan and sauté onions until golden brown.\n' +
+        '2. Add ginger-garlic paste and cook for a minute.\n' +
+        '3. Add chopped tomatoes, red chili powder, turmeric, and coriander powder. Cook until the tomatoes soften.\n' +
+        '4. Add the mutton and cook on medium heat until browned.\n' +
+        '5. Add water, cover, and simmer until the mutton is tender.\n' +
+        '6. Stir in garam masala and garnish with coriander leaves before serving.';
+} else if (item === 'plain rice') {
+    ingredients.push(
+        { name: 'Rice', amount: `${100 * totalPersons} grams` },
+        { name: 'Water', amount: `${200 * totalPersons} ml` },
+        
+    );
+    preparationProcess =
+        '1. Wash the rice thoroughly.\n' +
+        '2. In a pot, add rice, water\n' +
+        '3. Cook on medium heat until the rice is tender and water is absorbed.\n' +
+        '4. Fluff the rice with a fork and serve hot.';
+} else if (item === 'bagara rice') {
+    ingredients.push(
+        { name: 'Basmati rice', amount: `${150 * totalPersons} grams` },
+        { name: 'Onions', amount: `${20 * totalPersons} grams` },
+        { name: 'Green chilies', amount: `${2 * totalPersons}` },
+        { name: 'Ginger-garlic paste', amount: `${5 * totalPersons} grams` },
+        { name: 'Whole spices (cloves, cardamom, cinnamon)', amount: 'a few' },
+        { name: 'Mint leaves', amount: `${5 * totalPersons} grams` },
+        { name: 'Oil or ghee', amount: `${10 * totalPersons} ml` }
+    );
+    preparationProcess =
+        '1. Heat oil or ghee in a pan and sauté whole spices until aromatic.\n' +
+        '2. Add sliced onions, green chilies, and ginger-garlic paste. Cook until onions turn golden brown.\n' +
+        '3. Add washed rice, mint leaves, and water.\n' +
+        '4. Cook on low heat until the rice is done.\n' +
+        '5. Fluff the rice with a fork and serve hot.';
+
+
+} else if (item === 'paneer curry') {
+    ingredients.push(
+        { name: 'Paneer', amount: `${100 * totalPersons} grams` },
+        { name: 'Onions', amount: `${20 * totalPersons} grams` },
+        { name: 'Tomatoes', amount: `${20 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${1* totalPersons} tablespoons` },
+        { name: 'Red chili powder', amount: `${1 * totalPersons} tablespoons` },
+        { name: 'Coriander powder', amount: `${3 * totalPersons} tablespoons` },
+        { name: 'Turmeric powder', amount: `${1 * totalPersons} tablespoons` },
+        { name: 'Cream', amount: `${2 * totalPersons} ml` },
+        { name: 'Oil', amount: `${10 * totalPersons} ml` },
+        { name: 'Coriander leaves', amount: `${5 * totalPersons} grams` }
+    );
+    preparationProcess =
+        '1. Heat oil in a pan and sauté onions until golden.\n' +
+        '2. Add ginger-garlic paste and cook for a minute.\n' +
+        '3. Add chopped tomatoes, red chili powder, turmeric, and coriander powder. Cook until tomatoes soften.\n' +
+        '4. Add paneer and simmer for a few minutes.\n' +
+        '5. Stir in cream and garnish with coriander leaves. Serve hot.';
+} else if (item === 'mutton kheema') {
+    ingredients.push(
+        { name: 'Minced mutton', amount: `${100 * totalPersons} grams` },
+        { name: 'Onions', amount: `${30 * totalPersons} grams` },
+        { name: 'Tomato', amount: `${20 * totalPersons} grams` },
+        { name: 'Ginger-garlic paste', amount: `${10 * totalPersons} grams` },
+        { name: 'Red chili powder', amount: `${2 * totalPersons} grams` },
+        { name: 'Turmeric powder', amount: `${1 * totalPersons} grams` },
+        { name: 'Garam masala', amount: `${2 * totalPersons} grams` },
+        { name: 'Oil', amount: `${10 * totalPersons} ml` },
+        { name: 'Green peas', amount: `${20 * totalPersons} grams` },
+        { name: 'Coriander leaves', amount: `${5 * totalPersons} grams` }
+    );
+    preparationProcess =
+        '1. Heat oil in a pan and sauté onions until golden brown.\n' +
+        '2. Add ginger-garlic paste and cook for a minute.\n' +
+        '3. Add minced mutton, red chili powder, turmeric, and garam masala. Cook until the mutton is browned.\n' +
+        '4. Add chopped tomatoes and cook until they soften.\n' +
+        '5. Add green peas and simmer until the mutton is cooked through.\n' +
+        '6. Garnish with coriander leaves and serve hot.';
+}
+
+else if (item === 'egg fry') {
+        ingredients.push(
+            { name: 'eggs', amount: `${3 * totalPersons} pieces` },
+            { name: 'salt', amount: `${2 * totalPersons} grams` },
+            { name: 'pepper', amount: `${1 * totalPersons} grams` },
+            { name: 'oil', amount: `${10 * totalPersons} ml` },
+            { name: 'coriander leaves', amount: `${2 * totalPersons} grams` }
+        );
+    preparationProcess =
+        '1. Boil the eggs, peel them, and cut them in half.\n' +
+        '2. Heat oil in a pan, add chopped onions and green chilies, and sauté until golden.\n' +
+        '3. Add turmeric powder and salt, then place the egg halves cut side down in the pan.\n' +
+        '4. Fry for a few minutes until golden, garnish with coriander leaves, and serve hot.';
+
+}  else if (item === 'khaddu ka kheer') {
+                ingredients.push(
+                    { name: 'bottlegaurd', amount: `${20 * totalPersons} grams` },
+                    { name: 'milk', amount: `${10 * totalPersons} ml` },
+                    { name: 'sugar', amount: `${150 * totalPersons} grams` },
+                    { name: 'elaichi', amount: `${2 * totalPersons} grams` },
+                    { name: 'kaju', amount: `${2 * totalPersons} grams` },
+                    { name: 'raisin', amount: `${3 * totalPersons} grams` },
+                    { name: 'badam', amount: `${3 * totalPersons} grams` }
+
+                );
+                preparationProcess = 
+        '1. Peel and grate the bottle gourd.\n' +
+        '2. Boil the grated bottle gourd in water until it becomes tender.\n' +
+        '3. In a separate pot, bring the milk to a boil.\n' +
+        '4. Add the boiled bottle gourd to the milk and cook on low heat.\n' +
+        '5. Add sugar and elaichi, stirring continuously.\n' +
+        '6. Cook until the mixture thickens to a kheer consistency.\n' +
+        '7. Garnish with fried cashews, raisins, and almonds before serving warm.';
+}
+  else if (item === 'chicken curry') {
+                ingredients.push(
+                    { name: 'curryleaves', amount: `${1 * totalPersons} grams` },
+                    { name: 'onion', amount: `${5 * totalPersons} grams` },
+                    { name: 'tomato', amount: `${20 * totalPersons}grams` },
+                    { name: 'mirchi', amount: `${5 * totalPersons} grams` },
+                    { name: 'chicken', amount: `${150 * totalPersons} grams` },
+                    { name: 'mint leaves', amount: `${1 * totalPersons} grams` },
+                    { name: 'coriander', amount: `${1 * totalPersons} grams` },
+                    { name: 'curd', amount: `${50 * totalPersons} grams` },
+                    { name: 'chicken masala', amount: `${3 * totalPersons} grams` }
+
+                );
+    preparationProcess =
+        '1. Heat oil in a pan, add chopped onions and sauté until golden brown.\n' +
+        '2. Add ginger-garlic paste and chopped tomatoes, cooking until soft.\n' +
+        '3. Add chicken pieces, curry powder, and salt, mixing well.\n' +
+        '4. Cover and cook until chicken is done, then garnish with coriander leaves and serve hot.';
+} 
+            else if (item === 'mushroom masala') {
+    ingredients.push(
+        { name: 'Mushrooms', amount: `${150 * totalPersons} grams` },
+        { name: 'Onion', amount: `${50 * totalPersons} grams` },
+        { name: 'Tomato', amount: `${50 * totalPersons} grams` },
+        { name: 'Ginger', amount: `${10 * totalPersons} grams` },
+        { name: 'Garlic', amount: `${10 * totalPersons} grams` },
+        { name: 'Spices', amount: `${15 * totalPersons} grams` },
+        { name: 'Coriander', amount: `${5 * totalPersons} grams` }
+    );
+    preparationProcess =
+        '1. Heat oil in a pan and sauté chopped onions until golden.\n' +
+        '2. Add ginger-garlic paste and chopped tomatoes, cooking until soft.\n' +
+        '3. Add mushrooms, garam masala, and salt, stirring well.\n' +
+        '4. Cook until mushrooms are tender, then garnish with cilantro and serve hot.';
+}  else if (item === 'kaju curry') { 
+    ingredients.push( 
+        { name: 'Kaju', amount: `${80 * totalPersons} grams` }, 
+        { name: 'Onion', amount: `${50 * totalPersons} grams` }, 
+        { name: 'Tomato', amount: `${50 * totalPersons} grams` }, 
+        { name: 'Ginger', amount: `${10 * totalPersons} grams` }, 
+        { name: 'Garlic', amount: `${10 * totalPersons} grams` }, 
+        { name: 'Spices', amount: `${15 * totalPersons} grams` }, 
+        { name: 'Coriander', amount: `${5 * totalPersons} grams` } 
+    ); 
+    preparationProcess =
+        '1. Soak Kaju in warm water for 15 minutes, then grind to a smooth paste.\n' +
+        '2. Heat oil in a pan, add chopped onions and sauté until golden brown.\n' +
+        '3. Add ginger-garlic paste and chopped tomatoes, cooking until soft.\n' +
+        '4. Stir in the cashew paste, cream, coriander powder, and garam masala, cooking for a few minutes.\n' +
+        '5. Adjust salt to taste, then serve hot garnished with coriander leaves.';
+}
+
+
+    else if(item === 'tandoori roti') {
+        ingredients.push(
+            { name: 'Whole wheat flour', amount: `${100 * totalPersons} grams` },
+            { name: 'Water', amount: 'as needed' },
+            { name: 'Salt', amount: 'to taste' },
+            { name: 'Ghee or butter', amount: 'for brushing' }
+        );
+        preparationProcess = 
+            "1. Mix flour and salt in a bowl.\n" +
+            "2. Gradually add water and knead into a soft dough.\n" +
+            "3. Divide the dough into small balls and roll them out into flat rounds.\n" +
+            "4. Bake in a tandoor or on a hot griddle until puffed and golden.\n" +
+            "5. Brush with ghee or butter before serving.";
+    } 
+    else if (item === 'apricot delight') {
+        ingredients.push(
+            { name: 'Apricots', amount: `${250 * totalPersons} grams` },
+            { name: 'Sugar', amount: `${100 * totalPersons} grams` },
+            { name: 'Nuts (almonds, pistachios)', amount: `${50 * totalPersons} grams` },
+            { name: 'Cardamom powder', amount: `${5 * totalPersons} grams` }
+        );
+        preparationProcess = 
+            "1. Soak apricots in water for a few hours and then chop them.\n" +
+            "2. In a pan, add chopped apricots and sugar, and cook until it thickens.\n" +
+            "3. Add nuts and cardamom powder, mix well, and cook for a few more minutes.\n" +
+            "4. Allow to cool, then serve chilled or at room temperature.";
+    } else if (item === 'carrot halwa') {
+        ingredients.push(
+            { name: 'Grated carrots', amount: `${500 * totalPersons} grams` },
+            { name: 'Milk', amount: `${1000 * totalPersons} ml` },
+            { name: 'Sugar', amount: `${100 * totalPersons} grams` },
+            { name: 'Ghee', amount: `${20 * totalPersons} grams` },
+            { name: 'Nuts and raisins', amount: 'for garnish' }
+        );
+        preparationProcess = 
+            "1. In a pan, cook grated carrots in milk until the milk reduces and thickens.\n" +
+            "2. Add sugar and ghee, and cook for a few more minutes.\n" +
+            "3. Garnish with nuts and raisins before serving.";
+    } 
+
+return { ingredients, preparationProcess };
+ }
+
+    </script>
+
+    </script>
+</body>
+</html>

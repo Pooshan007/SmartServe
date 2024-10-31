@@ -1,0 +1,311 @@
+  
+
+        .search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+      }
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 2px solid #E7E8D1;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #1c599b;
+}
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color :#EDF4F2;
+        }
+
+        .background {
+            background-image: url("https://i.ibb.co/BcRz9jB/calc-bakground.jpg");
+            background-size: cover;
+            background-position: center ;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px;
+        }
+
+        .container {
+            width: 90%;
+            background-image:url();
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 100px;
+            text-align: center;
+            padding: 50px;
+            
+        }
+        
+
+        h1 {
+            color: #eeeaea;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #ffffff;
+
+        }
+        .label {
+             color: rgb(255, 255, 255);
+            }
+
+        .food-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .food-item {
+            width: 30%;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #010f04;
+            border-radius: 8px;
+            background-color: #EDF4F2;
+            position: relative;
+            transition: box-shadow 0.20s ease;
+        }
+
+        .food-item:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 170px;
+            border-radius: 5%;
+            object-fit:cover;
+        }
+
+        .food-item h3 {
+            margin: 10px 0;
+            color: #070000;
+        }
+
+        .food-item p {
+            color: #020000;
+        }
+
+        .plus-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #011405;
+            color: rgb(227, 223, 223);
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .plus-button:hover {
+            background-color: #010f04;
+        }
+
+        .cart {
+            margin-top: 20px;
+        }
+
+        .cart h2 {
+            color: #f8f6f6;
+        }
+
+        .cart-items {
+            margin-bottom: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cart-items li {
+            font-size: 18px;
+            color: #fffafa;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .cart-items li span {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .cart button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cart button:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 30px;
+            display: none;
+        }
+
+        .food-image {
+            position: relative;
+        }
+        .preparation-process {
+    font-family: 'Georgia', serif; /* Change to Georgia font */
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #333; /* Change the text color if needed */
+    margin-top: 10px; /* Add some margin for spacing */
+}
+         .ingredients-overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(6, 5, 5);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left; /* Align text to the left */
+}
+
+.ingredients-overlay ul {
+    list-style-type: none;
+    padding: 0.5px;
+}
+
+.ingredients-overlay li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left; /* Ensure list items are left-aligned */
+}
+        input[type="number"] {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="number"]:focus {
+            border-color: #007bff;
+        }
+
+       
+        .animate-add {
+            animation: bounceIn 0.5s forwards;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #000301;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    animation: fadeInOut 3s forwards;
+}
+
+              @keyframes fadeInOut {
+                   0% { opacity: 0; }
+                 10%, 90% { opacity: 1; }
+              100% { opacity: 0; }
+                   }
+     
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+    animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+ 
+        .cart-items .item-count {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: red;
+            color: white;
+            font-size: 12px;
+            padding: 3px 6px;
+            border-radius: 50%;
+        }
+       
+        .scroll-button {
+    position: fixed;
+    right: 20px; /* Distance from the right */
+    background-color: #01070d; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* On top of other elements */
+}
+
+#scrollToTop {
+    bottom: 70px; /* Positioning for the Scroll to Top button */
+}
+
+#scrollToBottom {
+    bottom: 20px; /* Positioning for the Scroll to Bottom button */
+}
+
+.scroll-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+#startersText {
+    color: hsl(0, 0%, 100%); /* Change to your desired color */
+    font-size: 24px; /* Increased font size */
+    margin-top: 10px;
+}
+
+#nonVegStartersText,
+#vegStartersText,
+#nonVegBiryaniText,
+#vegBiryaniText,
+#riceItemsText,
+#vegCurriesText,
+#nonVegCurriesText,
+#rotisText,
+#dessertsText {
+    color: #fff;
+    font-size: 24px; /* Increased font size */
+    margin-top: 10px;
+  }
